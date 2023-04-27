@@ -7,4 +7,8 @@
  Template:     fngl-s-core
  Version:      0.1
  Text Domain:  fanagalo2023-fngl-s-core-child
-*/p{color:#f0f}
+*/
+
+@charset "UTF-8"; // this statement is removed when compiling in "compressed" mode
+
+@import "4-html-elements/paragraph";
