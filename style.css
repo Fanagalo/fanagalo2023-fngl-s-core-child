@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Fanagalo2023
+ Theme URI:    https://www.fanagalo.nl/
+ Description:  child theme based on fngl_s-core
+ Author:       Jaap Wiering
+ Author URI:   https://www.fanagalo.nl/
+ Template:     fngl-s-core-main
+ Version:      0.1
+ Text Domain:  fanagalo2023-fngl-s-core-child
+*/
+
+/* hieronder komt de custom CSS, bijvoorbeeld */
+p {
+    color: #00ffff;
+}
