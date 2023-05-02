@@ -11,4 +11,8 @@
 
 @charset "UTF-8"; // this statement is removed when compiling in "compressed" mode
 
-@import "4-html-elements/paragraph";
+@import "1-global-variables/colors";
+@import "1-global-variables/spacing";
+@import "1-global-variables/svg";
+@import "1-global-variables/typography";
+@import "1-global-variables/width";
