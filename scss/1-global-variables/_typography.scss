@@ -8,16 +8,16 @@ the typographical rhythm is 28px (1.75rem)
 
 :root {
     /* font families */
-    --ff-sans: "Roboto", Arial, sans-serif;
-    --ff-serif: Georgia, serif;
+    --ff-sans: "Karla", Arial, Helvetica, sans-serif;
+    --ff-serif: "PT Serif", georgia, serif;
     --ff-mono: "Consolas", Courier, monospace;
     /* font size */
     --fs-xxs: 0.6rem; // ...
     --fs-xs: 0.75rem; // ...
     --fs-s: 0.85rem; // ...
     --fs-smallcaps: 0.95rem; // smallcaps; nav sub-item
-    --fs-paragraph: 1.125rem; // p; nav top-items
-    --fs-m: 1.3rem; // h4
+    --fs-p: 1.0625rem; // p; nav top-items
+    --fs-m: 1.15rem; // h4
     --fs-l: 1.5rem; // h3
     --fs-xl: 1.8rem; // h2 in article
     --fs-article-head: 2.2rem; // article title in archive mobile
@@ -28,7 +28,7 @@ the typographical rhythm is 28px (1.75rem)
     --lh-xxs: 1rem;
     --lh-xs: 1.25rem;
     --lh-s: 1.5rem;
-    --lh-paragraph: 1.75rem;
+    --lh-p: 1.75rem;
     --lh-large: 2.25rem;
     --lh-xl: 2.75rem;
     --lh-double: 3.5rem;
@@ -40,5 +40,5 @@ the typographical rhythm is 28px (1.75rem)
     /* spacing */
     --letter-spacing-smallcaps: 0.07rem;
     /* whiteline */
-    --whiteline: var(--lh-paragraph);
+    --whiteline: var(--lh-p);
 }

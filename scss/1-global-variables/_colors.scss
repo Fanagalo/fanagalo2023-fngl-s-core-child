@@ -17,6 +17,7 @@
         var(--fngl-red) 83%,
         var(--fngl-yellow) 100%
     );
+
     /* color scheme */
     // these must be HexRGB, RGB(A) or HSL(A); CSS Variables won't work
     $primary-color: hsl(196, 100%, 47%);
@@ -28,19 +29,25 @@
     --tertiary-color: #{$tertiary-color};
     --white: #ffffff;
     --black: #000000;
+
     /* background colors */
     --general-bg: var(--white);
     // --general-bg: url('images/grids/grid-4px-28px.svg');
+
     /* text colors */
-    --paragraph-color: hsl(0, 0%, 20%);
-    --heading-color: hsl(0, 0%, 27%);
-    --a-color: hsl(225, 100%, 60%);
-    --a-hover-color: hsl(240, 56%, 30%);
+    --p-color: hsl(0, 0%, 20%);
+    --h-color: hsl(0, 0%, 40%);
+    --a-color: hsl(225, 73%, 57%);
+    --a-hover-color: hsl(240, 64%, 27%);
+    --a-hover-visited: hsl(300, 100%, 25%);
+    --focus-color: hsla(225, 73%, 57%, 0.3); // a shade of --a-color
+
     /* interaction colors */
     --error-color: #d00;
     --warning-color: #f90;
     --mark-color: #fd0;
     --success-color: #0b0;
+
     /* primary tints - add white or black */
     --primary-lightest: #{mix(white, $primary-color, 75%)};
     --primary-lighter: #{mix(white, $primary-color, 50%)};
@@ -67,5 +74,5 @@
     --grey-darker: #{mix(black, $grey-middle, 50%)};
     --grey-darkest: #{mix(black, $grey-middle, 75%)};
     /* synonyms */
-    --diap-color: var(--white);
+    --diap-color: #ffffff;
 }

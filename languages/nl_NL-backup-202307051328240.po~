@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fanagalo 2023\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-21 07:48+0000\n"
+"PO-Revision-Date: 2023-07-05 13:27+0000\n"
+"Last-Translator: Jaap Wiering\n"
+"Language-Team: Nederlands\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: fanagalo2023"
+
+#. used between list items, there is a space after the comma
+#: inc/template-functions.php:112
+msgid ", "
+msgstr ", "
+
+#. Description of the theme
+msgid "child theme based on fngl_s-core"
+msgstr "child theme gebaseerd op fngl_s-core"
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:39 template-parts/content kopie.php:47
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Lees verder<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: footer.php:22
+msgid "Design and development by"
+msgstr "Ontwerp en code door"
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-functions.php:156
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Wijzig <span class=\"screen-reader-text\">%s</span>"
+
+#. Name of the theme
+msgid "Fanagalo 2023"
+msgstr "Fanagalo 2023"
+
+#: footer.php:23
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://www.fanagalo.nl/"
+msgstr "https://www.fanagalo.nl/"
+
+#. Author of the theme
+msgid "Jaap Wiering · Fanagalo"
+msgstr "Jaap Wiering · Fanagalo"
+
+#. %s: post title
+#: inc/template-functions.php:139
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Geef een reactie<span class=\"screen-reader-text\"> op %s</span>"
+
+#. used between list items, there is a space after the comma
+#: inc/template-functions.php:119
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. %s: modification date.
+#: inc/template-functions.php:77
+#, php-format
+msgctxt "modification date"
+msgid "Modified on %s"
+msgstr "Gewijzigd op %s"
+
+#: template-parts/content.php:50 template-parts/content kopie.php:58
+msgid "Pages:"
+msgstr "Pagina's"
+
+#. %s: post author.
+#: inc/template-functions.php:95
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "door %s"
+
+#. %s: post date.
+#: inc/template-functions.php:54
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Gepubliceerd op %s"
+
+#. 1: list of categories.
+#: inc/template-functions.php:115
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Categorie %1$s"
+
+#. %s: CMS name, i.e. WordPress.
+#: footer.php:26
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Werkt lekker dankzij %s"
+
+#: inc/template-functions.php:126
+msgid "Sticky"
+msgstr "Sticky"
+
+#. 1: list of tags.
+#: inc/template-functions.php:122
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tag %1$s"

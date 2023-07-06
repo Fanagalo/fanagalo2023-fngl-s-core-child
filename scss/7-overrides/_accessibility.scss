@@ -1,0 +1,49 @@
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    &:focus {
+        background-color: #f1f1f1;
+        clip: auto !important;
+        clip-path: none;
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 1rem;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar. */
+    }
+}
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+.screen-reader-text,
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    border-radius: 3px;
+    box-shadow: 0 0 0 5px var(--focus-color);
+    outline: var(--a-color) solid 1px;
+}

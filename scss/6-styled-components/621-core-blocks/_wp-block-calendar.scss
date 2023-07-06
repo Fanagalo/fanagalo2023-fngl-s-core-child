@@ -1,0 +1,35 @@
+/**
+ * Calendar block
+ *
+ * @checked with version WordPress 5.8.1
+ */
+:root {
+    --wp-block-calendar-color: #ddd;
+    --wp-block-calendar-text: #40464d;
+}
+.wp-block-calendar {
+    text-align: center;
+}
+.wp-block-calendar th,
+.wp-block-calendar tbody td {
+    padding: 0.25em;
+    border: 1px solid var(--wp-block-calendar-color);
+}
+.wp-block-calendar tfoot td {
+    border: none;
+}
+.wp-block-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.wp-block-calendar table th {
+    font-weight: 400;
+    background: var(--wp-block-calendar-color);
+}
+.wp-block-calendar a {
+    text-decoration: underline;
+}
+.wp-block-calendar table tbody,
+.wp-block-calendar table caption {
+    color: var(--wp-block-calendar-text);
+}

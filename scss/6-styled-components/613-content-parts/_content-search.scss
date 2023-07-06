@@ -1,0 +1,4 @@
+.article-summary > p {
+    @include paragraph-styling;
+    @include text-width;
+}

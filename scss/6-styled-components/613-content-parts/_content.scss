@@ -1,0 +1,16 @@
+article.post {
+    margin-bottom: 5.25rem;
+}
+
+.article-title {
+    @include title-styling;
+    @include text-width;
+    margin-bottom: 0;
+    a {
+        color: var(--h-color);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

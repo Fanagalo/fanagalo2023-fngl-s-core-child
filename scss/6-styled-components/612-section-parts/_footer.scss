@@ -1,0 +1,48 @@
+.footer-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+    gap: 1rem;
+    p {
+        color: var(--grey-light);
+        margin: 0;
+    }
+    a {
+        color: var(--grey-lightest);
+        margin: 0;
+    }
+    div {
+        width: 100%;
+        &.fanagalo-me-fecit {
+            a {
+                color: transparent;
+                display: inline-block;
+                width: 100%;
+                max-width: 307px;
+                height: 100px;
+                background-image: url(images/Fanagalo-logo-RGB-307x100-transparant.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top left;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $mq-small) {
+    .footer-area {
+        div {
+            margin-top: 0;
+            width: 45%;
+            &.footer-rights-acknowledgements p {
+                text-align: right;
+            }
+        }
+    }
+}
+@media screen and (min-width: $mq-large) {
+    .footer-area {
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,62 @@
+aside {
+    display: grid;
+    gap: 1rem 1rem;
+    align-items: start;
+    padding-bottom: 1rem;
+}
+
+/*
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: start;
+
+*/
+
+aside section {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media only screen and (min-width: $mq-small) {
+    aside {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    aside section {
+        grid-column: span 2;
+    }
+    aside section:only-child {
+        grid-column: span 6;
+    }
+    aside section:nth-child(2n + 1):nth-last-child(1) {
+        grid-column: span 4;
+    }
+}
+
+@media only screen and (min-width: $mq-medium) {
+    aside section {
+        grid-column: span 1;
+    }
+}
+
+/* colomn setup for 3 columns */
+// @media only screen and (min-width: $mq-medium) {
+//     aside {
+//         grid-template-columns: repeat(6, 1fr);
+//     }
+//     aside section:nth-child(2n + 1):nth-last-child(1) {
+//         grid-column: span 2;
+//     }
+//     aside section:nth-child(3n + 2):nth-last-child(1),
+//     aside section:nth-child(3n + 1):nth-last-child(2) {
+//         grid-column: span 3;
+//     }
+//     aside section:nth-child(3n + 4):nth-last-child(1),
+//     aside section:nth-child(3n + 3):nth-last-child(2),
+//     aside section:nth-child(3n + 2):nth-last-child(3),
+//     aside section:nth-child(3n + 1):nth-last-child(4) {
+//         grid-column: span 3;
+//     }
+// }

@@ -1,0 +1,53 @@
+.site-branding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
+@media screen and (min-width: $mq-medium) {
+    .site-branding {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: $mq-large) {
+    .site-branding {
+        padding: 1rem 0;
+    }
+}
+
+h1.site-title,
+p.site-title {
+    margin: 0;
+    padding: 0;
+    a {
+        color: transparent;
+        display: inline-block;
+        width: 307px;
+        height: 100px;
+        background-image: url(images/Fanagalo-logo-RGB-307x100-transparant.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top right;
+        &:visited {
+            color: transparent;
+        }
+    }
+}
+
+.site-description {
+    margin: 0;
+    font-family: var(--ff-serif);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-sub);
+    color: var(--h-color);
+}
+
+@media screen and (min-width: $mq-medium) {
+    .site-description {
+        text-align: right;
+        padding-top: 50px;
+    }
+}

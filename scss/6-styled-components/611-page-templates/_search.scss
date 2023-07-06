@@ -1,0 +1,21 @@
+.search main {
+    margin: 0;
+}
+
+.search {
+    .page-header {
+        @include figure-width;
+        border-bottom: 1px solid var(--grey-lighter);
+    }
+    .page-title {
+        margin: 0 auto;
+        padding: 1.75rem 0;
+        font-family: var(--ff-sans);
+        text-transform: lowercase;
+        font-weight: var(--fw-regular);
+        color: var(--h-color);
+        span {
+            font-weight: var(--fw-bold);
+        }
+    }
+}

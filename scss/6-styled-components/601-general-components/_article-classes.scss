@@ -1,0 +1,113 @@
+.main-area {
+    padding: 0;
+}
+
+.sticky {
+    display: block;
+}
+
+.article {
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+.article-header {
+    margin-bottom: 1.75rem;
+}
+
+/* meta sections */
+
+.article-meta {
+    @include text-width;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-s);
+    font-weight: var(--fw-sub);
+    color: var(--grey-medium);
+}
+
+.post-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        background-color: var(--eiklinde-paars);
+        display: inline;
+        margin-right: 0.25rem;
+        padding: 0.125rem 0.5rem;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: var(--fs-xs);
+            color: var(--diap-color);
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.article-post-date {
+    font-size: var(--fs-s);
+    color: var(--grey-dark);
+    text-transform: lowercase;
+}
+
+.article-tags a {
+    @include small-button;
+    background-color: var(--grey-lightest);
+    color: var(--p-color);
+    margin-left: 0.5rem;
+    &:hover {
+        background-color: var(--grey-light);
+        color: var(--diap-color);
+    }
+}
+
+.post-thumbnail,
+a.post-thumbnail {
+    display: block;
+    @include figure-width;
+}
+
+/* limit width of article elements */
+
+.article-content > p,
+.article-content > ul,
+.article-content > ol,
+.article-content > dl {
+    @include paragraph-styling;
+    @include text-width;
+}
+// .article-content > h1 {
+//         @include title-styling
+//     }
+.article-content > h2,
+.article-content > h3,
+.article-content > h4,
+.article-content > h5,
+.article-content > h6 {
+    @include heading-styling;
+    @include text-width;
+}
+.article-content > figcaption {
+    @include text-width;
+}
+.article-content > figure {
+    @include figure-width;
+}

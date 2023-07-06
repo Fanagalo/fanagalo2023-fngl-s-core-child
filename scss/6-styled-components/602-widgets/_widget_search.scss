@@ -1,0 +1,15 @@
+.widget_search {
+    form {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    label {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    button {
+        margin-left: 0.5rem;
+    }
+}

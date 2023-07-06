@@ -1,0 +1,27 @@
+:root {
+    --archive-article-bg: var(--white);
+}
+
+.category main,
+.tag main,
+.archive main {
+    margin: 0;
+}
+
+.archive-description {
+    @include text-width;
+}
+
+.archive {
+    .page-header {
+        @include figure-width;
+        border-bottom: 1px solid var(--grey-lighter);
+    }
+    .page-title {
+        margin: 0 auto;
+        padding: 1.75rem 0;
+        font-family: var(--ff-sans);
+        text-transform: uppercase;
+        color: var(--h-color);
+    }
+}

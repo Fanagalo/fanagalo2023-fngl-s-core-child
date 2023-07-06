@@ -1,0 +1,24 @@
+a.more-link {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-smallcaps);
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: var(--a-hover-color);
+    }
+}
+
+/* if the more link is place inside the excerpt paragraph */
+p > a.more-link {
+    display: inline;
+}
+
+/* if the more link is place after the excerpt paragraph */
+p ~ a.more-link {
+    @include text-width;
+    display: block;
+    padding-right: 0.25rem;
+    margin: -1.75rem auto 1.75rem;
+}
