@@ -13,7 +13,7 @@ get_header();
 <main id="primary" class="main-area">
 	<?php
 
-		/* Limit query: 51 = woordenlijst, 60 = effectiviteit, 65 = helpdes	*/
+		/* Limit query: 51 = woordenlijst, 60 = effectiviteit, 65 = helpdesk	*/
 		$the_query = new WP_Query( array( 'cat' => '-51,-60,-65' ) ); 
 
 		if ( have_posts() ) : ?>
@@ -24,15 +24,12 @@ get_header();
 		<?php
 
 		/* Start the Loop */
-		while (have_posts()) :
-			the_post();
-
-			/*
-				* Include the Post-Type-specific template for the content.
-				* If you want to override this in a child theme, then include a file
-				* called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				*/
-			get_template_part('template-parts/content', get_post_type());
+			while ( $the_query->have_posts() ) { 
+				$the_query->the_post();
+				get_template_part( 'template-parts/content', 'home' ); 
+			}
+			/* Restore original Post Data */
+			wp_reset_postdata();
 
 		endwhile;
 
