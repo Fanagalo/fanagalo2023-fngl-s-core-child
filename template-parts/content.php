@@ -53,7 +53,7 @@
 		?>
 	</div><!-- .article-content -->
 
-    <?php if ( is_home() && ! is_front_page() ) : ?>
+    <?php if ( /* is_home()  && */ !is_front_page() ) : ?>
 		<footer class="article-footer article-meta">
 			<?php fanagalo2023_modified_on(); fanagalo2023_entry_taxonomy(); ?>
 		</footer><!-- .article-footer -->
