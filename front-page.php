@@ -31,7 +31,7 @@ get_header();
 			/* Restore original Post Data */
 			wp_reset_postdata();
 
-		endwhile;
+		// endwhile;
 
 		the_posts_navigation();
 
