@@ -10,3 +10,45 @@
     @include svg-icon(--search, 24px, 24px);
     margin-bottom: -6px;
 }
+
+/* search field in top navigation bar */
+
+.nav-area {
+    .search-form-top {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: 4;
+    }
+    .search-field {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        z-index: 5;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+        border-style: none;
+        color: transparent;
+        &::placeholder {
+            color: transparent;
+        }
+        &:focus {
+            width: 250px;
+            right: 34px;
+            cursor: text;
+            background-color: var(--white);
+        }
+    }
+    .search-submit {
+        position: absolute;
+        right: 4px;
+        top: 5px;
+        &:hover {
+            background-color: transparent;
+        }
+        &:focus {
+            background-color: var(--a-hover-color);
+        }
+    }
+}

@@ -1573,6 +1573,7 @@ p.site-title a:visited {
 }
 
 .nav-area {
+  position: relative;
   display: grid;
   border: none;
   height: auto;
@@ -1889,6 +1890,48 @@ p.site-title a:visited {
   background: no-repeat left var(--search);
   background-size: cover;
   margin-bottom: -6px;
+}
+
+/* search field in top navigation bar */
+.nav-area .search-form-top {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 4;
+}
+.nav-area .search-field {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  z-index: 5;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  border-style: none;
+  color: transparent;
+}
+.nav-area .search-field::-moz-placeholder {
+  color: transparent;
+}
+.nav-area .search-field::placeholder {
+  color: transparent;
+}
+.nav-area .search-field:focus {
+  width: 250px;
+  right: 34px;
+  cursor: text;
+  background-color: var(--white);
+}
+.nav-area .search-submit {
+  position: absolute;
+  right: 4px;
+  top: 5px;
+}
+.nav-area .search-submit:hover {
+  background-color: transparent;
+}
+.nav-area .search-submit:focus {
+  background-color: var(--a-hover-color);
 }
 
 article.post {
