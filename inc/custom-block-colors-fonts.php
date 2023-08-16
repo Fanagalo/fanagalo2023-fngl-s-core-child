@@ -1,7 +1,6 @@
 <?php
 /**
  * Custom colors and font sizes for block editor
- * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
  * @package Fanagalo_underscores_core
  */
 

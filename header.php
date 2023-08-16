@@ -60,9 +60,6 @@
 				)
 			; ?>
 		</nav>
-		<?php if (is_user_logged_in()) {
-			get_search_form();
-		} 
-		?>
+		<?php get_search_form(); ?>
 	</div><!-- nav-area -->
 		

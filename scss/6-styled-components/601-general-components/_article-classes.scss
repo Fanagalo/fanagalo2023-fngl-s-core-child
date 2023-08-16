@@ -111,3 +111,8 @@ a.post-thumbnail {
 .article-content > figure {
     @include figure-width;
 }
+
+/* Block Editor width */
+.article-content > div {
+    @include figure-width;
+}
