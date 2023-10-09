@@ -16,13 +16,15 @@ load_theme_textdomain( 'fanagalo2023', get_stylesheet_directory() . '/languages'
  */ 
 
 /* Block editor customization */
+require get_stylesheet_directory() . '/inc/block-template-editor.php';        // Enable block template editor 
 require get_stylesheet_directory() . '/inc/custom-block-styling.php';        // Custom styling of the frontend and backend of the block editor 
 // require get_stylesheet_directory() . '/inc/custom-block-colors-fonts.php';    // Custom colors and font sizes for block editor
 
 /* Other customization */
 require get_stylesheet_directory() . '/inc/comments-disable.php';            // Disable all comments options
 // require get_stylesheet_directory() . '/inc/custom-header.php';               // Custom Header
-require get_stylesheet_directory() . '/inc/customizer.php';                  // Customizer
+// require get_stylesheet_directory() . '/inc/customizer.php';                  // Customizer
 // require get_stylesheet_directory() . '/inc/fngl-recent-posts-shortcode.php'; // Shortcode to display overview of pages, posts of CPT using a shortcode
 // require get_stylesheet_directory() . '/inc/googleanalytics.php';             // Placement of Google Analytics tag
+require get_stylesheet_directory() . '/inc/rss-additions.php';                // Extra features in RSS stream
 require get_stylesheet_directory() . '/inc/template-functions.php';           // Thumbnail and meta info functions

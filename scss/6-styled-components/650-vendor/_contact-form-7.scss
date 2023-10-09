@@ -1,0 +1,36 @@
+.home-contactform {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    //    padding: 1rem;
+    p {
+        margin: 0;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+        &::placeholder {
+            // opacity: 0.6;
+            color: var(--black);
+        }
+    }
+    textarea {
+        height: 6rem;
+    }
+
+    input[type="submit"] {
+        font-family: var(--ff-sans);
+        font-size: var(--fs-medium);
+        font-weight: var(--fw-regular);
+        color: var(--white);
+        background-color: var(--grey-darker);
+        text-transform: uppercase;
+        padding: 8px 16px;
+
+        &:hover {
+            background-color: var(--grey-darkest);
+        }
+    }
+}

@@ -85,34 +85,38 @@ a.post-thumbnail {
     @include figure-width;
 }
 
-/* limit width of article elements */
+/* 
+ * limit width of article elements
+ * the child selector ">" make more free layout possible in blocks 
+ */
 
-.article-content > p,
-.article-content > ul,
-.article-content > ol,
-.article-content > dl {
-    @include paragraph-styling;
-    @include text-width;
-}
-// .article-content > h1 {
-//         @include title-styling
-//     }
-.article-content > h2,
-.article-content > h3,
-.article-content > h4,
-.article-content > h5,
-.article-content > h6 {
-    @include heading-styling;
-    @include text-width;
-}
-.article-content > figcaption {
-    @include text-width;
-}
-.article-content > figure {
-    @include figure-width;
-}
-
-/* Block Editor width */
-.article-content > div {
-    @include figure-width;
+.article-content {
+    > p,
+    > ul,
+    > ol,
+    > dl {
+        @include paragraph-styling;
+        @include text-width;
+    }
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
+        @include heading-styling;
+        @include text-width;
+    }
+    figcaption {
+        @include text-width;
+    }
+    > div,  // Block Editor width
+    > figure {
+        @include figure-width;
+    }
+    > div:not(.wp-block-cover) {
+        @include text-width;
+    }
+    p + ul {
+        margin-top: -1.75rem;
+    }
 }

@@ -14,6 +14,7 @@
     color: var(--h-color);
     clear: both;
     word-break: break-word;
+    margin: var(--whiteline) auto 0;
 }
 
 @mixin title-styling {

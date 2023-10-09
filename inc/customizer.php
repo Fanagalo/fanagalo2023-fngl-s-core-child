@@ -1,7 +1,5 @@
 <?php
 /**
- * Healthmasters theme by Fanagalo Theme Customizer
- *
  * @package Fanagalo_underscores_core
  */
 

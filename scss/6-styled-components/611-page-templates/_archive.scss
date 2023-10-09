@@ -2,17 +2,12 @@
     --archive-article-bg: var(--white);
 }
 
-.category main,
-.tag main,
-.archive main {
-    margin: 0;
-}
-
-.archive-description {
-    @include text-width;
-}
-
+.category,
+.tag,
 .archive {
+    main {
+        margin: 0;
+    }
     .page-header {
         @include figure-width;
         border-bottom: 1px solid var(--grey-lighter);
@@ -24,4 +19,8 @@
         text-transform: uppercase;
         color: var(--h-color);
     }
+}
+
+.archive-description {
+    @include text-width;
 }
